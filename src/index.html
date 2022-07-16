@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="bg-gray-400 text-center">
+    <div class="max-w-lg bg-slate-200 mx-auto mt-44 p-8 rounded-xl shadow-lg">
+      <h2 class="text-4xl mb-4 tracking-wide text-slate-800">
+        Current Points:
+        <span id="current-points" class="text-slate-600">0</span>
+      </h2>
+      <button
+        type="button"
+        onclick="earnpoint()"
+        class="text-xl text-green-600 border border-green-600 px-2 rounded-md hover:bg-green-400/40 duration-200 active:bg-green-500/30"
+      >
+        Add points
+      </button>
+      <button
+        type="button"
+        onclick="rmvPoint()"
+        class="text-xl text-cyan-500 border border-cyan-600 px-2 rounded-md hover:bg-cyan-400/40 duration-200"
+      >
+        Remove points
+      </button>
+      <button
+        type="button"
+        onclick="erase()"
+        class="text-xl text-yellow-500 border border-yellow-600 px-2 rounded-md hover:bg-amber-400/40 duration-200"
+      >
+        Erase all
+      </button>
+      <p class="text-slate-400 tracking-widest text-center mt-4">
+        made by dario d'angelo
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
